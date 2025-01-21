@@ -18,7 +18,7 @@ services:
     container_name: mysql-db
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
-      MYSQL_DATABASE: course_db.sql
+      MYSQL_DATABASE: course_db  # Changed from course_db.sql to course_db
       MYSQL_USER: user
       MYSQL_PASSWORD: userpassword
     ports:
