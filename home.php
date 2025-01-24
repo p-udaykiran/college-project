@@ -45,7 +45,7 @@ $total_bookmarked = $select_bookmark->rowCount();
 
 <section class="quick-select">
 
-   <h1 class="heading"> I love you! quick options</h1>
+   <h1 class="heading"> I! quick options</h1>
 
    <div class="box-container">
 
