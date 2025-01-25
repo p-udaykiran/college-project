@@ -43,7 +43,7 @@ $total_bookmarked = $select_bookmark->rowCount();
 
 <!-- quick select section starts  -->
 
-<section class="quick-select">
+<section class="quick-selectttt">
 
    <h1 class="heading">quick-options</h1>
 
