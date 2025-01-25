@@ -1,11 +1,11 @@
 version: 0.0
 os: linux
 files:
-  - source: /home.php
-    destination: /var/www/html
+  - source: /
+    destination: /var/www/html/
 
 permissions:
-  - object: /var/www/html
+  - object: /var/www/html/
     pattern: "**"
     owner: www-data
     group: www-data
@@ -20,21 +20,7 @@ hooks:
       timeout: 300
       runas: root
 
-  AfterInstall:
-    - location: scripts/set_permissions.sh
+ ApplicationStop:
+    - location: scripts/stop_server
       timeout: 300
       runas: root
-
-  ApplicationStart:
-    - location: scripts/restart_webserver.sh
-      timeout: 300
-      runas: root
-
-  ValidateService:
-    - location: scripts/validate_service.sh
-      timeout: 300
-      runas: root
-
-
-
-
