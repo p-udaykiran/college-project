@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: /home.php
-    destination: /var/www/html/
+  - source: /
+    destination: /var/www/html
     
 hooks:
   BeforeInstall:
