@@ -1,19 +1,9 @@
 version: 0.0
 os: linux
 files:
-  - source: /
+  - source: /home.php
     destination: /var/www/html/
-
-permissions:
-  - object: /var/www/html/
-    pattern: "**"
-    owner: www-data
-    group: www-data
-    mode: 755
-    type:
-      - file
-      - directory
-
+    
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies.sh
